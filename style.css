@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "PP Neue Machina";
+    src: url("./PPNeueMachina-Regular.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "PP Neue Machina";
+}
+
+body {
+    background-color: #DBDBDB;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    padding: 26px 72px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
+
+.nav-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: difference;
+}
+
+.logo,
+.nav-links {
+    width: 50%;
+}
+
+.nav-links a {
+    color: #0A4175;
+    text-decoration: none;
+    margin-right: 48px;
+    font-size: 20px;
+}
+
+.ball-wrapper {
+    position: relative;
+    width: 511px;
+    height: 511px;
+}
+
+.header-ball {
+    position: fixed;
+    top: 22%;
+    left: 7%;
+    width: 511px;
+    height: 511px;
+    border-radius: 100%;
+    background-image:
+        linear-gradient(-135deg, #79A0FF 2%, #79A0FF 2%, #79A0FF00 50%),
+        linear-gradient(135deg, #FF603D 2%, #79A0FF00),
+        linear-gradient(-35deg, #FF93D4 2%, #FF93D400 90%),
+        linear-gradient(-35deg, #015172 0%, #FF603D 49%, #FF93D4 100%);
+    filter: blur(10px);
+}
+
+.ball-glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 470px;
+    height: 470px;
+    border-radius: 100%;
+    background-image: linear-gradient(201deg, #015172 0%, #FF603D 49%, #FF93D4 100%);
+    filter: blur(40px);
+    mix-blend-mode: color-dodge;
+}
+
+
+
+.header-container {
+    display: flex;
+    height: 740px;
+    padding: 52px 155px;
+    padding-top: 180px;
+    justify-content: space-between;
+}
+
+.header-text {
+    width: 55%;
+    margin-top: auto;
+    color: #0A4175;
+}
+
+.header-text h1 {
+    font-size: 100px;
+}
+
+.header-text p {
+    font-size: 40px;
+}
+
+.typewriter {
+    padding-top: 0;
+    padding-bottom: 24px;
+}
+
+.typewriter span {
+    font-style: italic;
+}
+
+.header-text a {
+    text-decoration: none;
+    border: solid 1px #0A4175;
+    border-radius: 40px;
+    padding: 12px 67px;
+    display: inline-block;
+    color: #0A4175;
+}
+
+section,
+header {
+    height: 100vh;
+    position: relative;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    padding: 195px 72px;
+    gap: 72px 81px;
+}
+
+.grid-tile {
+    color: #E5E5E5;
+    display: flex;
+}
+
+.tile-right {
+    margin-left: 16px;
+}
+
+.tile-right h2 {
+    margin-bottom: 17px;
+    font-size: 24px;
+}
+
+.tile-right p {
+    font-size: 20px;
+}
